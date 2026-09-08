@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "policy": "Contract repositories are provenance inputs only. Public CI does not fetch private source repositories.",
+  "repositories": {
+    "hacker-house-medellin/hhm-interfaces": {
+      "visibility": "public",
+      "revision": "b66988b856946ff028085323ff502796b97e0012",
+      "purpose": "H/HAUS domain and ores-chat reference contracts"
+    },
+    "ORESoftware/ores-middleware": {
+      "visibility": "public",
+      "revision": "6183cc877d6c058349adc733d325297c07d1c063",
+      "purpose": "trusted actor context, deadlines, request limits, and telemetry middleware"
+    },
+    "ores-rate-limit/ores-rl-interfaces": {
+      "visibility": "private",
+      "revision": "599b5eed206a569a21a632b38dd43d9975995c14",
+      "purpose": "distributed rate-limit contract boundary"
+    },
+    "ores-otel/ores-interfaces": {
+      "visibility": "public",
+      "revision": "5e1b9c583e1734b3aa78b585317e1a0de3374ae1",
+      "purpose": "content-free telemetry contract boundary"
+    },
+    "opto-sync/opto-sync-interfaces": {
+      "visibility": "public",
+      "revision": "875851a75a4e374521d1c6516f647fbf672ce9b0",
+      "purpose": "offline state and data synchronization contract boundary"
+    },
+    "ores-chat/ores-chat-interfaces": {
+      "visibility": "private",
+      "revision": "fa07438c3075347397fb57bfa6f45cbe6d397d28",
+      "purpose": "sales, support, knowledge search, and association-only discovery contracts"
+    }
+  }
+}
