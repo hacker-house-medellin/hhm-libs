@@ -1,0 +1,8 @@
+[package]
+name = "hhm-intelligence"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Fail-closed chat, search, embedding, correlation, and regression behavior for H/HAUS"
+
+[dependencies]
