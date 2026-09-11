@@ -10,6 +10,13 @@
 - `hhm-sync` owns offline-first reconciliation.
 - API, web, and CLI repositories compose these packages rather than copying their source.
 
+Chat/search policy and vector/regression behavior live in the runtime-light
+`hhm-intelligence` crate and JavaScript reference implementation. Wire models
+remain in interface repositories, persistence remains in `hhm-lib-core` and
+`hhm-orm-core`, and server authentication remains in common middleware. The
+library accepts only server-established actor context and exposes neither raw
+database access nor provider credentials.
+
 The long `hacker-house-medellin-libs` repository is a historical bootstrap alias, not a package source. Its generic two-field `Record` scaffold is intentionally not migrated because it duplicates neither the canonical domain model nor production behavior.
 
 ## Zed and Git submodules
